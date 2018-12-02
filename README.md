@@ -26,9 +26,37 @@ L'hôpital Foch met à disposition un historique de 412 patients ayant reçu une
 - Séries temporelles extraites des instruments de mesure du bloc opératoire.
 - Marqueurs temporels collectés manuellement lors de la transplantation.
 
+## Setup 
+
+- Cloner le repo dans un dossier avec `git clone git@github.com:dataforgoodfr/batch_5_transplant.git`
+- Ajoutez le repo au sein de votre `PYTHONPATH`. Voici un exemple pour Mac, où le repo a été cloné au sein du dossier `~/Documents`: 
+
+```
+open ~/.bashrc
+export PYTHONPATH="/Users/username/Documents/batch_5_transplant:$PYTHONPATH"
+```
+
+Pour en savoir plus sur les environnements et les `PYTHONPATH` voir [ce lien pour MAC](https://stackoverflow.com/questions/3387695/add-to-python-path-mac-os-x/3387737) ou ce [lien pour Windows](https://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows)
+- Vous pouvez desormais importer depuis un notebook les classes utiles au traitement de données avec la commande: 
+
+```
+from transplant.tools.dataset import Dataset
+```
+
 ## FAQ
 
 Nous maintenons une foire aux questions au sein de [ce document partagé](https://docs.google.com/document/d/1d_Tbq-IAW-30KVEQZv_IKozlDDtzy6QnfETXtgBTucw/edit).
+
+
+## Arborescence 
+
+Vous retrouverez plusieurs dossiers dans ce git:
+
+- `data` : vous retrouverez dans ce dossier l'ensembles des datasets.
+- `documentation`: dossier contenant tous les fichiers de documentation.
+- `scripts` : dossier contenant les scripts de cleaning et création des tables de dimensions et faits.
+- `etudes` : pour chaque étude effectuée merci de mettre vos notebooks dans ce dossier.
+- `production` : classes et fonctions permettant de standardiser l'import des données, training set et evaluation des modèles.
 
 ## Images
 

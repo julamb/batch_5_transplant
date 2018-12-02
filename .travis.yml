@@ -1,0 +1,5 @@
+language: python
+before_script: export PYTHONPATH=$(pwd):$PYTHONPATH
+script: python -m unittest discover -v transplant/tests	
+
+

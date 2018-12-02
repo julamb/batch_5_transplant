@@ -1,0 +1,7 @@
+pandas
+scikit-learn
+xlrd
+tqdm
+pip
+jupyter
+cython
