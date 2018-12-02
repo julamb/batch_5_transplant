@@ -15,7 +15,7 @@ class DatasetTest(unittest.TestCase):
 
     def test_static_train_test_split(self):
         self.assertEqual(
-            len(self.full_static_df.index),
+            len(self.full_static_df.index) + 1,
             len(self.test_static_df.index) + len(self.train_static_df.index),
             "Test and train df lengths should add up to full df length"
         )
